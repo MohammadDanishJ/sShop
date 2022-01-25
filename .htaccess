@@ -1,0 +1,34 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} /orders$|/home$|/profile$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ ?$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+
+
+# RewriteCond %{THE_REQUEST} .*\.html[\s\?]{1}
+# RewriteRule .*\.html$ - [R=404.html,L]
+
+# RewriteEngine On
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# RewriteRule ^(.*)$ $1.html [NC,L]
+
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# # RewriteRule ^([^/]+)/?$ http://localhost/projects/sShop/$1 [L,NE,R]
+# RewriteRule . /404.html [L]

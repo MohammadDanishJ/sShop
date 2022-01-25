@@ -1,0 +1,87 @@
+nav{
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+.nav a{
+    transition: .1s all ease;
+    max-width: 600px;
+    position: relative;
+    font-weight: 400;
+}
+
+nav a.active{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    height: 2.5px;
+    width: 0;
+    bottom: 0px;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s all ease;
+}
+
+nav a.active::before{
+    width: 2rem;
+}
+
+main{
+    padding-bottom: 45px;
+    /* flex-shrink: 0; */
+}
+
+main>section{
+    flex-shrink: 0;
+    overflow-y: scroll;
+    display: none;
+    max-width: 600px;
+    height: 100%;
+}
+
+.img{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner>img.img{
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 70px);
+}
+
+.banner-text{
+    font-size: 2.5em;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.banner-text>span{
+    color: var(--primary);
+}
+
+.fallback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(125deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    top: 0;
+}
