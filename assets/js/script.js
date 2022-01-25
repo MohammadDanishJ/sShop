@@ -26,17 +26,17 @@ document.onreadystatechange = function () {
         // create initial UI acc to url params
         let l = location.pathname
         switch (l) {
-            case '/projects/sShop/orders':
+            case '/orders':
                 activeNav = nav[0]
                 nav[0].click()
                 break;
 
-            case '/projects/sShop/home':
+            case '/home':
                 activeNav = nav[1]
                 nav[1].click()
                 break;
 
-            case '/projects/sShop/profile':
+            case '/profile':
                 activeNav = nav[2]
                 nav[2].click()
                 break;
