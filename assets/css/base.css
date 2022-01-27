@@ -37,7 +37,7 @@ main {
 
 ::-webkit-scrollbar {
     display: block;
-    width: 4px;
+    width: 6px;
     height: 6px;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6e00ff;
+    background: #006eff70;;
     border-radius: 20px;
 }
 
@@ -55,11 +55,11 @@ main {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #2d5dda70;
+    background: #006effbe;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #2d5dda;
+    background: #006eff;
 }
 
 a, a:hover {
