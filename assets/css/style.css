@@ -38,17 +38,15 @@ nav a.active::before{
     width: 2rem;
 }
 
-main{
-    height: calc(100vh - 45px);
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
 main>section{
     flex-shrink: 0;
     display: none;
     max-width: 600px;
     height: 100%;
+}
+
+main>section>div{
+    padding-bottom: 45px;
 }
 
 .img{
