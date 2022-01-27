@@ -125,8 +125,51 @@
             <circle class="spinner-path" cx="22" cy="22" r="20" fill="none" stroke-width="4"></circle>
         </svg>
     </div>
-    <div id="app"></div>
-    <script type="module" src="./src/js/init.js"></script>
+
+    <!-- <div id="auth"></div> -->
+
+    <div id="app">
+        <nav class="pfx b0 w100vw">
+            <div class="nav pabs w100 b0">
+                <div class="fl fl-c fl-j-sb w100 h100">
+                    <a class="text-center w100 nav-controller cp" data-link="orders" href="orders">Orders</a>
+                    <a class="fl fl-c w100 nav-controller cp"  data-link="home" href="home">Home</a>
+                    <a class="text-center w100 nav-controller cp"  data-link="profile" href="profile">Profile</a>
+                </div>
+            </div>
+        </nav>
+        <main class="fl fl-c fl-a-fs">
+
+            <section id="p_orders" class="w100vw p05">
+                <div class="fl fl-c w100 h100">
+                    Orders
+                </div>
+            </section>
+
+
+            <section id="p_home" class="w100vw p05">
+                <div class="w100">
+                    <div class="fl banner prel w100">
+                        <img src="./assets/images/banner.webp" alt="" class="img">
+                        <div class="fallback"></div>
+                        <div class="pabs t0 w100 h100">
+                            <div class="w100 h100 fl fl-c p12">
+                                <h1 class="banner-text text-center lhinit">1 Unit&nbsp;<span id="lRate">INR
+                                        100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl fl-c w100 p12">Home</div>
+                </div>
+            </section>
+            <section id="p_profile" class="w100vw p05">
+                <div class="fl fl-c w100 h100">Profile</div>    
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="./assets/js/router.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
