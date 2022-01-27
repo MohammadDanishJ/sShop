@@ -1,2 +1,2 @@
-const routeUrl = '/projects/sShop/';
+const routeUrl = '/';
 export default routeUrl;
