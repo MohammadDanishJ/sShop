@@ -74,6 +74,7 @@ main>section>div{
 }
 
 .banner-text>span{
+    display: inline-block;
     color: var(--primary);
 }
 
