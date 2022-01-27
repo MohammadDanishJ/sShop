@@ -1,6 +1,7 @@
 :root{
     --primary: #365099;
-    --primary-white: #f2f4fb;
+    --primary-faded: #3650995d;
+    --primary-white: #f0f0f0;
     --grey-fade: #909090;
     --white: #ffffff;
     --black: #000000;
